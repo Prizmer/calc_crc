@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace crcCalc.Algorithms
+namespace CRCCalc.Algorithms
 {
-    class crc8Teplouchet:IAlgorithms
+    class crc8Teplouchet: IAlgorithms
     {
         public bool GetCRCBytes(byte[] inputBytes, ref byte[] crcBytes)
         {

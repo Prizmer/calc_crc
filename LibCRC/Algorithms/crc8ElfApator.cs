@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace crcCalc.Algorithms
+namespace CRCCalc.Algorithms
 {
     class crc8ElfApator : IAlgorithms
     {

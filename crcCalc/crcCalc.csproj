@@ -37,6 +37,9 @@
     <ApplicationIcon>calc_ico.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PMControls">
+      <HintPath>..\..\..\portManager\PortManager\PMControls\bin\Debug\PMControls.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -49,9 +52,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Algorithms\crc8ElfApator.cs" />
-    <Compile Include="Algorithms\crc8Teplouchet.cs" />
-    <Compile Include="Algorithms\IAlgorithms.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,6 +84,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="calc_ico.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CtlCrcCalc\CtlCrcCalc.csproj">
+      <Project>{81889e73-a2ea-4cde-af63-905082180313}</Project>
+      <Name>CtlCrcCalc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LibCRC\LibCRC.csproj">
+      <Project>{aeb1ae61-cd26-4b78-b5c8-421f22097bab}</Project>
+      <Name>LibCRC</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
