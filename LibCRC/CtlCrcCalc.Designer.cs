@@ -1,4 +1,4 @@
-﻿namespace CtlCrcCalc
+﻿namespace CRCCalc
 {
     partial class CtlCrcCalc
     {

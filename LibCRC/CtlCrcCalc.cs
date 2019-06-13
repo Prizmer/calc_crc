@@ -8,10 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-using CRCCalc;
+using CRCCalc.Algorithms;
 
 
-namespace CtlCrcCalc
+namespace CRCCalc
 {
     public partial class CtlCrcCalc: UserControl
     {

@@ -33,11 +33,12 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
@@ -45,8 +46,19 @@
     <Compile Include="Algorithms\crc8ElfApator.cs" />
     <Compile Include="Algorithms\crc8Teplouchet.cs" />
     <Compile Include="Algorithms\IAlgorithms.cs" />
+    <Compile Include="CtlCrcCalc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CtlCrcCalc.Designer.cs">
+      <DependentUpon>CtlCrcCalc.cs</DependentUpon>
+    </Compile>
     <Compile Include="LibCRC.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CtlCrcCalc.resx">
+      <DependentUpon>CtlCrcCalc.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

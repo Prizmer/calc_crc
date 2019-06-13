@@ -1,6 +1,6 @@
 ﻿namespace crcCalc
 {
-    partial class Form1
+    partial class FormMain
     {
         /// <summary>
         /// Требуется переменная конструктора.
@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnCalc = new System.Windows.Forms.Button();
-            this.ctlCrcCalc1 = new CtlCrcCalc.CtlCrcCalc();
+            this.ctlCrcCalc1 = new CRCCalc.CtlCrcCalc();
             this.SuspendLayout();
             // 
             // richTextBox1
@@ -87,18 +87,18 @@
             // ctlCrcCalc1
             // 
             this.ctlCrcCalc1.InputByteString = "";
-            this.ctlCrcCalc1.Location = new System.Drawing.Point(553, 12);
+            this.ctlCrcCalc1.Location = new System.Drawing.Point(552, 12);
             this.ctlCrcCalc1.Name = "ctlCrcCalc1";
             this.ctlCrcCalc1.Size = new System.Drawing.Size(243, 389);
-            this.ctlCrcCalc1.TabIndex = 5;
+            this.ctlCrcCalc1.TabIndex = 7;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(803, 408);
-            this.Controls.Add(this.btnCalc);
             this.Controls.Add(this.ctlCrcCalc1);
+            this.Controls.Add(this.btnCalc);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -117,10 +117,10 @@
 
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Label label1;
-        private CtlCrcCalc.CtlCrcCalc ctlCrcCalc1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btnCalc;
+        private CRCCalc.CtlCrcCalc ctlCrcCalc1;
     }
 }
 
