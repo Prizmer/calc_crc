@@ -69,5 +69,20 @@ namespace CRCCalc
             return true;
         }
 
+        public bool GetCRCFromByteArr(byte[] arr, string algName, ref byte[] crc)
+        {
+            IAlgorithms algorithm = null;
+            crc = null;
+
+            Type typeAlgorithm = Type.GetType(ALG_NAMESPACE + "." + algName);
+            algorithm = (IAlgorithms)Activator.CreateInstance(typeAlgorithm);
+
+            if (!algorithm.GetCRCBytes(arr, ref crc))
+            {
+                return false;
+            }
+
+            return true;
+        }
     }
 }
